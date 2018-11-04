@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tile_dog_darkcoral">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Acciones a la Cloud"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/white"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<TableRow
+    android:weightSum="100">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener datos de mascotas perdidas registradas en la cloud que hayan sido denunciadas como perdidas."
+        android:layout_weight="50"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir datos de mascotas perdidas con código QR activo a la DB de Pet-QR."
+        android:layout_weight="50"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"/>
+</TableRow>
+        <TableRow
+            android:weightSum="100">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/get_lost"
+                android:background="@drawable/button_style_rounded"
+                android:src="@drawable/cloud_db_64"
+                android:layout_weight="50"
+                android:layout_margin="10dp"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/upload_lost"
+                android:background="@drawable/button_style_rounded"
+                android:src="@drawable/cloud_db_upload_64"
+                android:layout_weight="50"
+                android:layout_margin="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

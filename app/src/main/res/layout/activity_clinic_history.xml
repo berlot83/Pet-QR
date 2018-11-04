@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tile_dog_lightblue">
+
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/clinicHistory"
+    android:text="Historia Clínica"
+    android:textStyle="bold"
+    android:drawableTop="@drawable/history"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/data"
+        android:text=""
+        android:justificationMode="inter_word"
+        android:layout_below="@id/clinicHistory"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_btn"
+        android:text="Volver"
+        android:layout_below="@id/data"
+        android:drawableLeft="@drawable/back"
+        />
+
+</LinearLayout>

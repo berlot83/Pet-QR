@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tile_dog_bone">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/tile_dog_darkblue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.newpc.qrcode.ReaderActivity"
+        android:id="@+id/table_reader">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Scannear ahora"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/scan_btn"
+            android:drawableBottom="@drawable/dog"
+            android:padding="20dp"
+            android:background="@drawable/button_style_rounded"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/test"
+        android:layout_below="@id/scan_btn"
+        />
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/raze"
+        android:layout_below="@id/test"
+        Only for Test to all data Json response
+        />-->
+
+<TableRow
+    android:background="#607D8B"
+    android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Descripción"
+        android:padding="3dip"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Detalle"
+        android:padding="3dip"/>
+</TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Raza"
+            android:padding="3dip"
+            android:textStyle="bold"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableRaze"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nombre"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableName"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:text="Edad"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableAge"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Nombre del Tutor"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableOwnerName"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Apellido del Tutor"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableOwnerLastname"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Dni"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableDni"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Direccion"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableStreet1"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Teléfono principal"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tablePhone1"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Teléfono alternativo"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tablePhone2"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Email"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:background="#d4d7d8"/>
+            <TextView
+                android:id="@+id/tableEmail"
+                android:text="Datos"
+                android:gravity="center"
+                android:padding="3dip"
+                android:layout_weight="1"
+                android:background="#d4d7d8"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Redes Sociales"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:background="#bcbfc0"/>
+            <TextView
+                android:id="@+id/tableSocial"
+                android:text="Datos"
+                android:gravity="center"
+                android:padding="3dip"
+                android:layout_weight="1"
+                android:background="#bcbfc0"/>
+        </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="V. Antirábica"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableDateAntiRabicVaccine"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="V. Poliv."
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableDatePolivalentVaccine"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="V. Sextup."
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableDateSextupleVaccine"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="V. Octup."
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableDateOctupleVaccine"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="H. Clínica"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableClinicHistory"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+
+            android:clickable="true"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Enfermedad"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableIllness"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Medicado"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableMedicated"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Estado"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#bcbfc0"/>
+        <TextView
+            android:id="@+id/tableStatus"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#bcbfc0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Subscripción"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:background="#d4d7d8"/>
+        <TextView
+            android:id="@+id/tableSubscription"
+            android:text="Datos"
+            android:gravity="center"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="#d4d7d8"/>
+    </TableRow>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:text="Ver ubicacion del hogar"
+            android:layout_below="@id/tableSubscription"
+            android:drawableLeft="@drawable/maps"
+            />
+</TableLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>
+
+
+

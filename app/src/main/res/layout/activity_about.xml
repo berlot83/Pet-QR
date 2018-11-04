@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tile_dog_darkblue">
+
+    <ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/molokotech"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/molokotech" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/description"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/molokotech"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="Este software fue desarrollado y es mantenido por Molokotech Solutions. El propósito del mismo, es facilitar una herramienta para recuperar a mascotas perdidas mediante un código QR, brindando además un sistema de información integral, tanto sea de historia clínica, medicamentos que requiere y muchos datos más. En el caso que el animal no sea recuperado por sus dueños por imposibilidad sea cual fuere, aquel que la encuentre tendrá la información necesaria para que misma siga teniendo una vida ordenada, y el dueño anterior tendrá la tranquilidad que dejó información disponible a quien la encuentre. Para mas informacion sobre este y/u otros productos viste nuestra web de Molokotech tocando nuestro logo."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="V. 1.0.0"
+                android:textColor="#ffffff"
+                android:id="@+id/version"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_below="@id/description" />
+
+    </RelativeLayout>
+</ScrollView>
+</TableLayout>
